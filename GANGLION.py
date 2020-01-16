@@ -91,7 +91,7 @@ if __name__ == "__main__":
     pygame.mixer.init()
     # szerokość i wysokość okna gry
     OKNOGRY_SZER = 400
-    OKNOGRY_WYS = 800
+    OKNOGRY_WYS = 700
     # kolor okna gry, składowe RGB zapisane w tupli
     TLO = (000, 000, 000)
 
@@ -197,7 +197,7 @@ if __name__ == "__main__":
         PALETKA_SZER = 30  # szerokość
         PALETKA_WYS = 90  # wysokość
         BLUE = (0, 0, 255)  # kolor paletki
-        PALETKA_1_POZ = (0, 700)  # początkowa pozycja zapisana w tupli
+        PALETKA_1_POZ = (0, 600)  # początkowa pozycja zapisana w tupli
         # utworzenie powierzchni paletki, wypełnienie jej kolorem,
         #paletka1 = pygame.Surface([PALETKA_SZER, PALETKA_WYS])
         paletka1 = pygame.image.load("grafiki/paletka.png")
@@ -221,12 +221,12 @@ if __name__ == "__main__":
         # ustawienie prostokąta zawierającego piłkę w początkowej pozycji
         pilka_prost = pilka.get_rect()
         pilka_prost.x = OKNOGRY_SZER / 2
-        pilka_prost.y = 650
+        pilka_prost.y = 600
 
         #####################
         moment_sygnalu = 30
         licznik = 0
-        lot_pilki = int(650)
+        lot_pilki = int(600)
         czas = 0 #przedłużenie czasu trwania sygnału
         start = 0
         #####################
